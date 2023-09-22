@@ -54,9 +54,9 @@ const login = {
 
   loginUser: function () {
     $.ajax({
-      url: "google.com", // Replace with your API endpoint
+      url: "google.com",
       method: "POST",
-      dataType: "json", // Specify the expected data type
+      dataType: "json",
       data: {
         name: name,
         email: email,
@@ -64,9 +64,8 @@ const login = {
         repeatPassword: repeatPassword,
       },
       success: function (data) {
-        // This function will be called if the request is successful
         console.log("Data received:", data);
-        // You can process the data here
+
         window.location.href = "login.html";
       },
       error: function (xhr, status, error) {
